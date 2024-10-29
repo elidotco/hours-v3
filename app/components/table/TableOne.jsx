@@ -84,7 +84,7 @@ const TableTwo = ({ cols, headers }) => {
         className={`grid text-sm ${gridsnum} border-b border-stroke py-4.5 px-4 dark:border-strokedark  sm:${gridsnum} md:px-6 2xl:px-5`}
       >
         {headers.map((item) => (
-          <div className="col-span-1 flexitems-center">
+          <div key={item} className="col-span-1 flexitems-center">
             <p className="font-medium ">{item}</p>
           </div>
         ))}
